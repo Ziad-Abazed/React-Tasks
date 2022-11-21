@@ -1,0 +1,409 @@
+/* style for all pages*/
+body {
+  background-color: #111111;
+  font-family: sans-serif;
+  color: white;
+}
+
+footer{
+  padding-top: 10px;
+  margin-bottom: 0%;
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  background-color: #252525;
+  margin-top: 10%;
+}
+.titles{
+  color: #8A2BE2;
+}
+/*style for navbar*/
+.icon-bar {
+  width: 90px;
+  background-color: rgb(31, 30, 30);
+  position: absolute;
+  position: fixed;
+  margin-top: 150px;
+  margin-left: 90%;
+
+
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.6s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #8A2BE2;
+}
+/* style for home page*/
+
+/*style for about me part*/
+
+.aboutme {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  margin-top: 5%;
+  justify-items: center;
+}
+
+.test {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  margin-top: 5%;
+  justify-items: center;
+  background-color: blue;
+
+
+}
+
+#profile-img {
+  width: 80%;
+
+
+}
+
+.about-image {
+  width:40%;
+
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.about-info {
+  width: 50%;
+  height: 500px;
+}
+
+.button {
+  background-color: #8A2BE2;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*style for qualification part */
+
+.qualification{
+  width: 80%;
+margin: auto;
+grid-template-columns: 1fr 1fr;
+text-align: center;
+
+}
+ul{
+  list-style: none;
+}
+
+
+
+/*style for skills part */
+.skills {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.technicalskills {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+}
+
+.soft-skills {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+
+
+}
+
+.tools {
+  height: 250px;
+  border: 4px solid #8A2BE2;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.tools:hover {
+  box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
+}
+
+
+/* style for projucts page*/
+
+.card {
+  background-color: #8A2BE2;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
+}
+
+.container {
+  width: 80%;
+}
+
+
+/* style for contact page*/
+.contact-page {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  gap: 10px;
+ 
+
+}
+.contact-info {
+  width: 40%;
+  margin-top: 10%;
+
+}
+
+.contact-form {
+  width: 60%;
+  margin-top: 13%;
+  display: flex;
+}
+
+input {
+  margin: 5px;
+  border: 2px solid #8A2BE2;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #252525;
+  color: white;
+}
+
+textarea {
+  margin: 5px;
+  border: 2px solid #8A2BE2;
+  width: 97%;
+  height: 200px;
+  border-radius: 10px;
+  color: white;
+  padding-top: 10px;
+  background-color: #252525;
+}
+
+.mail-phone {
+  vertical-align: middle;
+  background-color: #252525;
+  padding-left: 8px;
+  width: 50%;
+  align-content: center;
+  height: 35px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #8A2BE2;
+
+}
+
+#icon {
+  color: #8A2BE2;
+  width: 20px;
+  height: 20px;
+}
+
+
+
+
+/* media*/
+@media screen and (max-width:1054px) {
+  .icon-bar {
+    margin-left: 90%;
+
+  }
+/*media query for home page*/
+  #profile-img {
+    width: 90%;
+
+
+  }
+
+  .about-image {
+    width: 50%;
+    margin-top: 6%;
+  }
+
+  .about-info {
+    width: 50%;
+
+  }
+
+  .soft-skills {
+    grid-template-columns: repeat(3,1fr);
+
+  }
+
+
+  .technicalskills {
+    grid-template-columns: auto auto auto;
+
+  }
+  /*media query for contact page*/
+  .contact-page {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form,
+  textarea,
+  input,
+  .mail-phone {
+    width: 100%;
+  }
+
+}
+
+
+
+@media screen and (max-width:800px) {
+
+  .icon-bar {
+    width: 100%;
+    background-color: rgb(31, 30, 30);
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+  }
+/*media query for home page*/
+  .aboutme {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+  }
+
+  .about-image {
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-info {
+    text-align: center;
+    width: 100%;
+  }
+
+  .soft-skills {
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .technicalskills {
+    grid-template-columns: auto auto;
+
+  }
+
+  /*media query for contact page*/
+  .contact-page {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form,
+  textarea,
+  input,
+  .mail-phone {
+    width: 100%;
+  }
+
+}
+
+@media (max-width:600px) {
+  .icon-bar {
+    width: 100%;
+    background-color: rgb(31, 30, 30);
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+  }
+/*media query for home page*/
+
+  .aboutme {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+  }
+
+  .about-image {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-info {
+    text-align: center;
+    width: 100%;
+  }
+
+  .soft-skills {
+    grid-template-columns: auto;
+
+  }
+
+  .technicalskills {
+    grid-template-columns: auto;
+
+  }
+    /*media query for contact page*/
+
+  .contact-page {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form,
+  textarea,
+  input,
+  .mail-phone {
+    width: 100%;
+  }
+}
